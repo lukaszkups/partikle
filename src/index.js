@@ -142,7 +142,17 @@ function partikle({ opts }) {
   animateParticles();
 }
 
-// createParticleBackground('particles-js', '#282e3b');
-// createParticleBackground('particles-js--gold', '#a7871e');
-// createParticleBackground('particles-js--exp', '#2f3646', 500);
-// createParticleBackground('particles-js--projects', '#282e3b', 300);
+/*
+// Example usage:
+<script src="https://unpkg.com/partikle"></script>
+<div class="particle-canvas-wrapper" style="width: 100%; height: 100vh; position: relative; overflow: hidden;">
+  <div class="particle-canvas"></div>
+</div>
+<script>
+partikle({
+  nodeId: 'particle-canvas',
+  particleColor: '#fefefe',
+  particlesAmount: 400
+});
+</script>
+*/
