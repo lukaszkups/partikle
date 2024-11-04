@@ -5,7 +5,7 @@ A zero-dependency library for rendering floating particles
 # Example usage
 
 ```
-<script src="https://unpkg.com/partikle"></script>
+<script src="https://unpkg.com/partikle@latest"></script>
 <div class="particle-canvas-wrapper" style="width: 100%; height: 100vh; position: relative; overflow: hidden;">
   <div class="particle-canvas"></div>
 </div>

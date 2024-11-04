@@ -1,6 +1,6 @@
 {
   "name": "partikle",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A zero-dependency library for rendering floating particles ",
   "main": "src/index.js",
   "scripts": {

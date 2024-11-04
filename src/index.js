@@ -1,12 +1,11 @@
 
 function partikle(opts) {
+  const { nodeId, particleColor = 'white', particlesAmount = 100, maxFPS = 60 } = opts
   // timestamps are ms passed since document creation.
   // lastTimestamp can be initialized to 0, if main loop is executed immediately
   let lastTimestamp = 0;
-  const maxFPS = 60;
   const timestep = 1000 / maxFPS; // ms for each frame
 
-  const { nodeId, particleColor = 'white', particlesAmount = 100 } = opts
   // Get the container by node ID
   const container = document.getElementById(nodeId);
 
