@@ -3,7 +3,7 @@ function partikle(opts) {
   // timestamps are ms passed since document creation.
   // lastTimestamp can be initialized to 0, if main loop is executed immediately
   let lastTimestamp = 0;
-  const maxFPS = 60,
+  const maxFPS = 60;
   const timestep = 1000 / maxFPS; // ms for each frame
 
   const { nodeId, particleColor = 'white', particlesAmount = 100 } = opts
