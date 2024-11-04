@@ -1,5 +1,5 @@
 
-function partikle({ opts }) {
+function partikle(opts) {
   const { nodeId, particleColor = 'white', particlesAmount = 100 } = opts
   // Get the container by node ID
   const container = document.getElementById(nodeId);
