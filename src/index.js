@@ -1,5 +1,11 @@
 
 function partikle(opts) {
+  // timestamps are ms passed since document creation.
+  // lastTimestamp can be initialized to 0, if main loop is executed immediately
+  let lastTimestamp = 0;
+  const maxFPS = 60,
+  const timestep = 1000 / maxFPS; // ms for each frame
+
   const { nodeId, particleColor = 'white', particlesAmount = 100 } = opts
   // Get the container by node ID
   const container = document.getElementById(nodeId);
@@ -116,7 +122,13 @@ function partikle(opts) {
   }
 
   // Animate particles
-  function animateParticles() {
+  function animateParticles(timestamp) {
+    requestAnimationFrame(animateParticles); // Continue the animation
+    // skip if timestep ms hasn't passed since last frame
+    if (timestamp - lastTimestamp < timestep) return;
+
+    lastTimestamp = timestamp;
+
     ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
 
     // Update and draw each particle
@@ -126,8 +138,6 @@ function partikle(opts) {
     });
 
     connectParticles(); // Draw lines between particles
-
-    requestAnimationFrame(animateParticles); // Continue the animation
   }
 
   // Handle canvas resizing
@@ -139,7 +149,7 @@ function partikle(opts) {
 
   // Initialize particles and start animation
   initParticles();
-  animateParticles();
+  requestAnimationFrame(animateParticles);
 }
 
 /*
