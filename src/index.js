@@ -151,6 +151,8 @@ function partikle(opts) {
   requestAnimationFrame(animateParticles);
 }
 
+module.exports = partikle;
+
 /*
 // Example usage:
 <script src="https://unpkg.com/partikle"></script>
@@ -165,3 +167,4 @@ partikle({
 });
 </script>
 */
+
