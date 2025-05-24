@@ -5,7 +5,7 @@ interface PartikleOptions {
   maxFPS?: number;
 }
 
-export function partikle(opts: PartikleOptions): void {
+export default function partikle(opts: PartikleOptions): void {
   const {
     nodeId,
     particleColor = 'white',

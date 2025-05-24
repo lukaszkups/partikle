@@ -1,6 +1,6 @@
 {
   "name": "partikle",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "A zero-dependency library for rendering floating particles ",
   "types": "dist/types/index.d.ts",
   "files": [

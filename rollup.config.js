@@ -11,17 +11,17 @@ export default [
   },
   {
     input: 'src/index.ts',
-    output: { file: 'dist/index.cjs.js', format: 'cjs', exports: 'named' },
+    output: { file: 'dist/index.cjs.js', format: 'cjs', exports: 'default' },
     plugins,
   },
   {
     input: 'src/index.ts',
-    output: { file: 'dist/index.umd.js', format: 'umd', name: 'partikle', exports: 'named' },
+    output: { file: 'dist/index.umd.js', format: 'umd', name: 'partikle', exports: 'default' },
     plugins,
   },
   {
     input: 'src/index.ts',
-    output: { file: 'dist/index.iife.js', format: 'iife', name: 'partikle' },
+    output: { file: 'dist/index.iife.js', format: 'iife', name: 'partikle', exports: 'default' },
     plugins,
   },
 ];

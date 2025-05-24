@@ -1,4 +1,4 @@
-export function partikle(opts) {
+export default function partikle(opts) {
     const { nodeId, particleColor = 'white', particlesAmount = 100, maxFPS = 60 } = opts;
     let lastTimestamp = 0;
     const timestep = 1000 / maxFPS;
