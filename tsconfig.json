@@ -4,7 +4,6 @@
     "module": "ESNext",
     "declaration": true,
     "declarationDir": "dist/types",
-    "outDir": "dist/tsc",
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
