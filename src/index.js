@@ -151,7 +151,7 @@ function partikle(opts) {
   requestAnimationFrame(animateParticles);
 }
 
-module.exports = partikle;
+export { partikle };
 
 /*
 // Example usage:
